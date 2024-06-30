@@ -1,0 +1,165 @@
+/* أنماط عامة */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, nav, main {
+    padding: 20px;
+}
+
+header {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+nav {
+    background-color: #343a40;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* تكون العناصر في الوسط */
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s; /* تأثير الانتقال */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* تأثير التكبير عند التمرير */
+}
+
+.product-card img {
+    max-width: 100%;
+}
+
+.product-detail {
+    display: flex;
+    justify-content: center; /* تكون العناصر في الوسط */
+    align-items: center; /* تكون العناصر في الوسط رأسياً */
+    flex-direction: column;
+}
+
+.product-detail img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+button, .btn-detail, .btn-purchase {
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+button:hover, .btn-detail:hover, .btn-purchase:hover {
+    background-color: #ff6347;
+}
+
+.btn-detail, .btn-purchase {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+/* توسيط العناصر في صفحة إتمام الشراء */
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.checkout-form h1 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* زر إتمام الشراء */
+button.btn-purchase {
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+button.btn-purchase:hover {
+    background-color: #ff6347;
+}
